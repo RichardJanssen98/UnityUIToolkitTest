@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="test.uss" />
+    <ui:VisualElement name="TopPanel" style="height: 215px; width: 1218px; background-color: rgba(0, 0, 0, 0.4);">
+        <ui:Label text="Hello World! From UXML" name="HelloWorld" style="font-size: 80px; display: flex;" />
+        <ui:Button text="Make new Text" display-tooltip-when-elided="true" name="BtnMakeNewText" enable-rich-text="true" style="height: 71px; width: 212px; font-size: 20px; -unity-font-style: bold; -unity-text-align: middle-center; white-space: nowrap; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); text-shadow: 0 0 0 rgb(0, 0, 0);" />
+        <ui:Button text="Toggle Label" display-tooltip-when-elided="true" name="BtnToggleLabel" enable-rich-text="true" style="height: 71px; width: 212px; font-size: 20px; -unity-font-style: bold; -unity-text-align: middle-center; white-space: nowrap; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); text-shadow: 0 0 0 rgb(0, 0, 0); left: 18%; top: -35%;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="listView" />
+    <ui:VisualElement name="BottomPanel" style="flex-direction: column; justify-content: flex-start; align-items: stretch; height: 239px; position: absolute; bottom: 0; width: 1221px; margin-right: 0; background-color: rgba(33, 33, 33, 0.49); left: auto;">
+        <ui:Label text="Hello World! From the Bottom" display-tooltip-when-elided="true" name="BottomLabel" style="font-size: 80px;" />
+    </ui:VisualElement>
+    <ui:Button text="Toggle Top Panel" display-tooltip-when-elided="true" name="BtnToggleTop" style="height: 78px; width: 301px; flex-direction: column; font-size: 20px;" />
+    <ui:Button text="Toggle Bottom Panel" display-tooltip-when-elided="true" name="BtnToggleBottom" style="height: 78px; width: 301px; white-space: normal; -unity-text-align: middle-center; align-items: flex-start; flex-direction: row; left: 75%; bottom: 81px; font-size: 20px;" />
+</ui:UXML>
